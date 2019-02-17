@@ -86,9 +86,11 @@ export default function Hook() {
           />
         </>
       ) : null}
-
+      <br />
       <h4>
-        {gameStat.victory ? `Done! 🎉 Time: ${gameStat.endTime}ms` : null}
+        {gameStat.victory
+          ? `Done! 🎉 Time: ${gameStat.endTime / 1000}secs`
+          : null}
       </h4>
       <hr />
 
